@@ -1,0 +1,30 @@
+{
+  "name": "async_timer",
+  "version": "1.0.0",
+  "description": "async_timer - node.js program requesting a server",
+  "main": "index.js",
+  "dependencies": {
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morecodemore/async_timer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/morecodemore/async_timer/issues"
+  },
+  "homepage": "https://github.com/morecodemore/async_timer#readme"
+}

@@ -14,4 +14,4 @@ run eslint
 
 start the server
 
-    node server.js /*timer count ms (string)*/  /*timer reset ms (string)*/
+    PORT=/*value*/ INTERVAL=/*value*/ STOP=/*value*/ node server.js

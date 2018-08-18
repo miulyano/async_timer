@@ -1,7 +1,7 @@
 const http = require('http');
-const startSettings = process.argv.slice(2);
-const interval = startSettings[0];
-const stop = startSettings[1];
+const interval = process.env.INTERVAL || 1000;
+const stop = process.env.STOP || 1000;
+const serverPort = process.env.PORT || 3000;
 let timer;
 
 const server = http.createServer((req, res) => {
@@ -16,9 +16,9 @@ const server = http.createServer((req, res) => {
   }
 });
 
-server.listen(3000, (err) => {
+server.listen(serverPort, (err) => {
   if (err) {
     return console.log('fatal server error', err);
   }
-  console.log(`the server is running on the port 3000`);
+  console.log(`the server is running on the port ${serverPort}`);
 });

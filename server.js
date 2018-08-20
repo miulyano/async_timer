@@ -12,7 +12,6 @@ const server = http.createServer((req, res) => {
   }, interval);
   setTimeout(() => {
     clearInterval(timer);
-    timer = null;
     res.end(`<h1>server stop <h2>(${new Date().toUTCString()})</h2></h1>`);
   }, stop);
 });
